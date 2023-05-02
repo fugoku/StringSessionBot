@@ -20,7 +20,7 @@ app = Client(
 if __name__ == "__main__":
     logging.info("Starting the bot")
     try:
-        app.start()
+        result = app.start()
     except (ApiIdInvalid, ApiIdPublishedFlood):
         raise Exception("Your API_ID/API_HASH is not valid.")
     except AccessTokenInvalid:
